@@ -1,0 +1,19 @@
+#include<iostream>
+#include<conio.h>
+#include<iomanip>
+using namespace std;
+
+int main()
+
+{
+	double mass, density, volume;
+	cout << "Enter Mass(g): ";
+	cin >> mass;
+	cout << "Enter Volume(cm^3): ";
+	cin >> volume;
+	density = mass/ 4*volume;
+	cout << "The Density Is(g/cm^3): " << setprecision(2) << density << endl;
+	
+	getch();
+	return 0 ; 
+}
