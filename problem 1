@@ -1,0 +1,33 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+int main ()
+{
+	int w;
+	int x;
+	int y;
+	int z;
+
+	cout << "Prices: Premium-$250  Sideline-$100 Box-$50 General Admission-$25" << endl;
+	cout << " " << endl;
+	cout << "Tickets sold on premium: "; 
+	cin >> w;
+	cout << "Tickets sold on sideline: ";  
+	cin >> x;
+	cout << "Tickets sold on box: ";
+	cin >> y;
+	cout << "Tickets sold on general admission: ";  
+	cin >> z;
+
+	cout << "The total ticket is: $" << w + x + y + z << endl;
+	cout << "Premium net sales: $" << w*25 << endl;
+	cout << "Sideline net sales: $" << x*50 << endl;
+	cout << "Box net sales: $" << y*150 << endl;
+	cout << "General Admission net sales: $" << z*250 << endl;
+	cout << "TOTAL SALES: $" << w*25 + x*50 + y*150 + z*250;
+
+
+getch();
+return 0;
+}
