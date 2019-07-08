@@ -1,0 +1,35 @@
+#include <iostream>
+#include <conio.h>
+#include <iomanip>
+
+
+using namespace std;
+
+int main()
+{
+    double net_balance,average_daily_balance,d1,d2,payment,interest,monthly_interest_rate;
+
+    cout << "Balance Owned: ";
+    cin >> net_balance;
+
+    cout << "Payment Made: ";
+    cin >> payment;
+
+    cout << "Enter number of days in the billing cycle: ";
+    cin >> d1;
+
+    cout << "Enter number of days payment is made before billing cycle: ";
+    cin >> d2;
+
+    cout  << "Enter monthly interest rate: ";
+    cin >> monthly_interest_rate;
+
+    average_daily_balance = (net_balance * d1 - payment * d2)/d1;
+
+    interest = average_daily_balance * monthly_interest_rate;
+
+    cout <<endl<< "Interest is: " << interest << setprecision(3) << fixed << showpoint <<endl;
+
+	getch();
+  return 0;
+}
